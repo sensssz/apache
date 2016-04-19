@@ -1,0 +1,13 @@
+prefix=/home/jiamin/usr
+exec_prefix=/home/jiamin/usr
+libdir=${prefix}/lib
+APRUTIL_MAJOR_VERSION=1
+includedir=/home/jiamin/usr/include
+
+Name: APR Utils
+Description: Companion library for APR
+Version: 1.5.4
+# assume that apr-util requires libapr of same major version
+Requires: apr-1
+Libs: -L${libdir} -laprutil-${APRUTIL_MAJOR_VERSION}  /home/jiamin/OSDI/httpd/srclib/apr-util/xml/expat/libexpat.la
+Cflags: -I${includedir}

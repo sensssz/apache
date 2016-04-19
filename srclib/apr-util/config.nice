@@ -1,0 +1,18 @@
+#! /bin/sh
+#
+# Created by configure
+
+CC="/home/jiamin/gcc/bin/gcc"; export CC
+"/home/jiamin/OSDI/httpd/srclib/apr-util/configure" \
+"--disable-option-checking" \
+"--with-pcre=/home/jiamin/usr/" \
+"CC=/home/jiamin/gcc/bin/gcc" \
+"--cache-file=/dev/null" \
+"--srcdir=/home/jiamin/OSDI/httpd/srclib/apr-util" \
+"--with-apr=../apr" \
+"--prefix=/home/jiamin/usr" \
+"--exec-prefix=/home/jiamin/usr" \
+"--libdir=/home/jiamin/usr/lib" \
+"--includedir=/home/jiamin/usr/include" \
+"--bindir=/home/jiamin/usr/bin" \
+"$@"
